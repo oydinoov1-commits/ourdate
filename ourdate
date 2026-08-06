@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Wednesday ❤️</title>
+
+<style>
+body{
+    margin:0;
+    background:#05070d;
+    color:white;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+    text-align:center;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h1{
+    font-size:55px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:30px;
+    margin:25px 0;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.card h2{
+    font-size:35px;
+}
+
+.card p{
+    font-size:18px;
+    opacity:.8;
+}
+
+button{
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    font-size:20px;
+    cursor:pointer;
+    margin:20px;
+}
+
+.yes{
+    background:white;
+    color:black;
+}
+
+.no{
+    background:#222;
+    color:white;
+    position:relative;
+}
+
+#finish{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:#05070d;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+<h1>Our Wednesday ❤️</h1>
+
+<p>
+A special date invitation
+</p>
+
+
+<div class="card">
+<h2>❄️ Ice City</h2>
+<p>
+First stop. Walking, laughing and making memories together.
+</p>
+</div>
+
+
+<div class="card">
+<h2>🍜 Seoul Mun</h2>
+<p>
+Dinner time:
+<br>
+🍗 Korean Chicken
+<br>
+🍜 Ramyeon
+<br>
+🍙 Kimbap
+<br>
+🍧 Dessert
+</p>
+</div>
+
+
+<div class="card">
+<h2>🌉 Anhor Riverside</h2>
+<p>
+Evening walk under city lights.
+</p>
+</div>
+
+
+<div class="card">
+<h2>💌 My message</h2>
+<p>
+Maybe this Wednesday becomes one of our favorite memories.
+I want to spend it with you ❤️
+</p>
+</div>
+
+
+
+<h2>
+Will you be my date? 🤍
+</h2>
+
+
+<button class="yes" onclick="yesClick()">
+YES ❤️
+</button>
+
+
+<button class="no" id="no">
+NO
+</button>
+
+
+</div>
+
+
+
+<div id="finish">
+
+<h1>❤️ Thank You</h1>
+
+<p>
+See you on Wednesday 🌹
+</p>
+
+</div>
+
+
+
+<script>
+
+let no=document.getElementById("no");
+
+
+no.onmouseover=function(){
+
+let x=Math.random()*400-200;
+let y=Math.random()*300-150;
+
+no.style.transform=
+`translate(${x}px,${y}px)`;
+
+}
+
+
+
+function yesClick(){
+
+document.getElementById("finish").style.display="flex";
+
+}
+
+</script>
+
+
+</body>
+</html>
